@@ -145,6 +145,7 @@ Como se puede ver, en sonarcloud se muestra la cobertura que la que había mostr
 # Cómo ejecutar la app
 La app tiene un desarrollo bastante influencia a los servcios, como se nos enseñó. Por ello, la clase controladora es ProductsApplication, allí se hizo en la main la prueba de aceptación. 
 
+![alt text](image-38.png)
 
 Y los resultados, como indica el requerimiento, se muestra en consola de acuerdo a lo que debe pasar. Este enfoque permite desarrolla los controladores rest y conectar un cliente front. 
 
@@ -154,4 +155,10 @@ spring-boot:run
 ```
 
 En la raíz del proyecto. 
+
+Al ejecutar, queda así
+
+![alt text](image-39.png)
+![alt text](image-40.png)
+![alt text](image-41.png)
 
