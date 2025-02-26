@@ -22,4 +22,14 @@ public class WarningAgentTest {
         // Verificar que el WarningAgent se active (active = true)
         assertTrue(warningAgent.isActive(), "WarningAgent debe estar activo cuando el stock es menor a 5");
     }
+
+    @Test
+    public void testWarningAgentNotActiveWhenStockHigh() {
+        // Crear un producto con stock alto (por ejemplo, 10000)
+        Product product = new Product("Test Product", 50.0f, 10000, "Test Category");
+        warningAgent.update(product);
+        
+        // Verificar que el WarningAgent no se active (active = false)
+        assertEquals(false, warningAgent.isActive(), "WarningAgent no debe activarse cuando el stock es alto");
+    }
 }

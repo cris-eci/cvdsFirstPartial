@@ -82,7 +82,23 @@ Hamemos un maven clean package
 ![alt text](image-17.png)
 Como nos dimos cuenta, las pruebas aún no cumplen lo requerido
  Hacemos mvn clean test para generar el site de jacoco
- 
+
+![alt text](image-20.png)
+ ![alt text](image-18.png)
+ ![alt text](image-19.png)
+
 
 ### Refactor the test 
 Ahora, refactorizamos las pruebas para poder hacer el cubrimiento requerido en los requerimientos.
+
+Por poder terminar el parcial en su totalidad, el refactor de todas las pruebas queda en la versión definitiva del proyecto. 
+
+Ahora volvemos a ejecutar mvn clean package, mvn clean test, generamos el reporte con Jacoco y nos daremos cuenta que la cobertura supera ampliamente la requerida. En este caso tenemos una  cobertura del 9 %
+
+![alt text](image-21.png)
+Despues del refactor las pruebas pasan
+![alt text](image-22.png)
+
+Cobertura nueva
+![alt text](image-23.png)
+![alt text](image-24.png)
