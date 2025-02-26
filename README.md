@@ -134,11 +134,15 @@ Ejecutamos el comando de configuración en mvn para añadir el proyecto en donde
 * la organización
 * la organization key
 * y el token
+
+```bash
+mvn verify sonar:sonar   -Dsonar.host.url=https://sonarcloud.io   -Dsonar.organization=cvds   -Dsonar.projectKey=CVDS   -Dsonar.login=4c562e4bf154cb84aa76c9268bfcb5fe46ffd77f
+```
 ![alt text](assets/image-34.png)
 Y listo
 
 ![alt text](assets/image-35.png)
-Como se puede ver, en sonarcloud se muestra la cobertura que la que había mostrado Jacoco.
+Como se puede ver, en sonarcloud se muestra la cobertura.
 
 ![alt text](assets/image-36.png)
 ![alt text](assets/image-37.png)
