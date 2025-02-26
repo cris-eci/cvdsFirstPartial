@@ -93,8 +93,7 @@ Ahora, refactorizamos las pruebas para poder hacer el cubrimiento requerido en l
 
 Por poder terminar el parcial en su totalidad, el refactor de todas las pruebas queda en la versión definitiva del proyecto. 
 
-Ahora volvemos a ejecutar mvn clean package, mvn clean test, generamos el reporte con Jacoco y nos daremos cuenta que la cobertura supera ampliamente la requerida. En este caso tenemos una  cobertura del 9 %
-
+Ahora volvemos a ejecutar mvn clean package, mvn clean test, generamos el reporte con Jacoco y nos daremos cuenta que la cobertura supera ampliamente la requerida. En este caso tenemos una  cobertura buena.
 ![alt text](image-21.png)
 Despues del refactor las pruebas pasan
 ![alt text](image-22.png)
@@ -102,3 +101,57 @@ Despues del refactor las pruebas pasan
 Cobertura nueva
 ![alt text](image-23.png)
 ![alt text](image-24.png)
+
+
+# Bono
+Dado que el profe ya había dicho, ya había credo cuenta con github en sonarcloud. Asi que nos registramos. 
+
+
+Hacemos nuestro repo publico. 
+
+![alt text](image-25.png)
+
+Nos loggeamos en sonarcloud
+![alt text](image-26.png)
+
+Creamos una nueva organización
+![alt text](image-27.png)
+![alt text](image-28.png)
+![alt text](image-29.png)
+![alt text](image-30.png)
+
+![alt text](image-31.png)
+
+Creamos un toke de seguridad
+
+![alt text](image-32.png)
+
+
+![alt text](image-33.png)
+
+Ejecutamos el comando de configuración en mvn para añadir el proyecto en donde tenemos que decir
+* El origen que es sonnarcloud
+* la organización
+* la organization key
+* y el token
+![alt text](image-34.png)
+Y listo
+
+![alt text](image-35.png)
+Como se puede ver, en sonarcloud se muestra la cobertura que la que había mostrado Jacoco.
+
+![alt text](image-36.png)
+![alt text](image-37.png)
+# Cómo ejecutar la app
+La app tiene un desarrollo bastante influencia a los servcios, como se nos enseñó. Por ello, la clase controladora es ProductsApplication, allí se hizo en la main la prueba de aceptación. 
+
+
+Y los resultados, como indica el requerimiento, se muestra en consola de acuerdo a lo que debe pasar. Este enfoque permite desarrolla los controladores rest y conectar un cliente front. 
+
+Para ejecutar solo se necesita escribir 
+```bash
+spring-boot:run
+```
+
+En la raíz del proyecto. 
+
